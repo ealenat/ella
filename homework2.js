@@ -1,8 +1,8 @@
  /*
 Program Name: js
-Name: Ealena Telson. why font, why something other than this, radio button, psedudocode copy -paste/insert as pdf doc
+Name: Ealena Telson.
 Date Created: 10/14/2024 
-Date Last Created: 09/16/2024
+Date Last Created: 10/18/2024
 Version: 1.0
 Description: Homework 2 JS
 */
