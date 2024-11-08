@@ -2,7 +2,7 @@
 Program Name: js
 Name: Ealena Telson.
 Date Created: 11/4/2024 
-Date Last Created: 11//72024
+Date Last Created: 11/8/72024
 Version: 2.0
 Description: Homework 3 JS
 */
@@ -396,12 +396,11 @@ function validateEverything() {
     if (!confirmPassword()) {
         valid = false;
     }
-    if (valid) { //getting info from submit box
+    if (valid) {
+
         document.getElementById("submit").disabled = false;
-        document.getElementById("alert-box").style.display = "none";
-        return true;
     } else {
         showAlert();
-        return false;
-    }
 }
+}
+
