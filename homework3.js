@@ -293,14 +293,17 @@ function validatePassword() {
 function confirmPassword() {
     password1 = document.getElementById("password").value;
     password2 = document.getElementById("con_password").value;
+    submitBtn = document.getElementById("submit");
 
     if (password1 != password2) {
         document.getElementById("password2-error").innerHTML = 
         "Passwords do not match.";
+        submitBtn.disabled = true;
         return false;
     } else {
             document.getElementById("password2-error").innerHTML = 
             "";
+            submitBtn.disabled = false;
             return true;
         } 
 }
