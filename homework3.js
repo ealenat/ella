@@ -2,7 +2,7 @@
 Program Name: js
 Name: Ealena Telson.
 Date Created: 11/4/2024 
-Date Last Created: 11/8/72024
+Date Last Created: 11/08/72024
 Version: 2.0
 Description: Homework 3 JS
 */
