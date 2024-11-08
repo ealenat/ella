@@ -3,7 +3,7 @@ Program Name: js
 Name: Ealena Telson.
 Date Created: 11/4/2024 
 Date Last Created: 11/08/72024
-Version: 2.0
+Version: 3.0
 Description: Homework 3 JS
 */
 
@@ -320,13 +320,13 @@ function reviewInput() {
             switch (datatype) {
                 case "checkbox":
                     if (formcontent.elements[i].checked) {
-                        formoutput = formoutput + "<tr> <td alighn= 'right'>" + formcontent.elements[i].name + "</td>";
+                        formoutput = formoutput + "<tr> <td align= 'right'>" + formcontent.elements[i].name + "</td>";
                         formoutput = formoutput + "<td class = 'outputdata'>&#x2713;</td></tr>";
                     }
                     break;
                     case "radio":
                         if (formcontent.elements[i].checked) {
-                            formoutput.formoutput + "<tr> <td align = 'right'>" + formcontent.elements[i].name + "</td>";
+                            formoutput += "<tr> <td align = 'right'>" + formcontent.elements[i].name + "</td>";
                             formoutput = formoutput + " <td class= 'outputdata'>" + formcontent.elements[i].value + "</td></tr>";
                         }
                         break;
@@ -366,6 +366,7 @@ function showAlert() {
 function validateEverything() {
     let valid = true;
 
+    document.getElementById("alert-box").style.display = "none";
     if (!validateFname()) {
         valid = false;
     }
@@ -401,6 +402,7 @@ function validateEverything() {
         document.getElementById("submit").disabled = false;
     } else {
         showAlert();
+        return false;
 }
 }
 
