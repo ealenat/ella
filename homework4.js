@@ -439,6 +439,7 @@ var inputs = [
     {id: "mname", cookieName: "middleInitial"},
     {id: "lname", cookieName: "lastName"},
     {id: "dob", cookieName: "dob"},
+   
     {id: "address1", cookieName: "address1"},
     {id: "city", cookieName: "city"},
     {id: "zip", cookieName: "zipCode"},
