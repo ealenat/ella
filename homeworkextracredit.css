@@ -307,3 +307,27 @@ td.outputdata {
  #caps-lock-warning.show-warning {
     display: inline; /*shows it when the class is added*/
  }
+
+
+.uploadButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: darkgrey;
+    color:cornflowerblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+/*for the upload button for insurance card*/
+.uploadButton:hover {
+    background-color: darkgray;
+}
+
+.hidden {
+    display: none;
+}
+
+#fileInput{
+    align-items: center;
+}
