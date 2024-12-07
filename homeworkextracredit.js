@@ -7,6 +7,8 @@ Version: 2.0
 Description: Homework extra credit JS
 */
 
+//recaptcha//
+ <script src="https://www.google.com/recaptcha/api.js"></script>
 //dynamic date js code//
 const d = new Date();
 let text = d.toLocaleDateString();
