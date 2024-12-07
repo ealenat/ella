@@ -11,6 +11,7 @@ Description: Medical information submittion form. TP Homework extra credit
 
 <html>
    <head>
+      <script src="https://www.google.com/recaptcha/api.js?render=6Le3tJQqAAAAALTe3AhYYRlUcpbRa36n0bmjfzEs"></script>
       <link rel="stylesheet" href="homeworkextracredit.css"> 
       <!-- links to css file -->
        <title>Patient Registration | Get Better Medical Clinic</title>
@@ -573,6 +574,16 @@ Description: Medical information submittion form. TP Homework extra credit
                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                    <input type="button" name="validate" id="validate" value="Validate" style="font-family: 'optima';" onclick="validateEverything();"/>
                                 </center>
+                                 <script>
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6Le3tJQqAAAAALTe3AhYYRlUcpbRa36n0bmjfzEs', {action: 'submit'}).then(function(token) {
+              // Add your logic to submit to your backend server here.
+          });
+        });
+      }
+  </script>
                            </td>
                        </tr>                              
                    </table>
