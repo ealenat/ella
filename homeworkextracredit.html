@@ -573,11 +573,12 @@ Description: Medical information submittion form. TP Homework extra credit
                                    <input type="button" name="review" id="review" value="Review" style="font-family: 'optima';" onclick="reviewInput()"/>
                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                    <input type="button" name="validate" id="validate" value="Validate" style="font-family: 'optima';" onclick="validateEverything();"/>
+                                  <!--copied from google recaptcha-->
                                   <script>
       function onClick(e) {
         e.preventDefault();
         grecaptcha.ready(function() {
-          grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
+          grecaptcha.execute('6Le3tJQqAAAAALTe3AhYYRlUcpbRa36n0bmjfzEs', {action: 'submit'}).then(function(token) {
               // Add your logic to submit to your backend server here.
           });
         });
