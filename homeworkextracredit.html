@@ -10,6 +10,7 @@ Description: Medical information submittion form. TP Homework extra credit
 -->
 
 <html>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
    <head>
       <link rel="stylesheet" href="homeworkextracredit.css"> 
       <!-- links to css file -->
@@ -572,6 +573,10 @@ Description: Medical information submittion form. TP Homework extra credit
                                    <input type="button" name="review" id="review" value="Review" style="font-family: 'optima';" onclick="reviewInput()"/>
                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                    <input type="button" name="validate" id="validate" value="Validate" style="font-family: 'optima';" onclick="validateEverything();"/>
+                                  <button class="g-recaptcha" 
+                                   data-sitekey="reCAPTCHA_site_key=6Le3tJQqAAAAALTe3AhYYRlUcpbRa36n0bmjfzEs" 
+                                      data-callback='onSubmit' 
+                                      data-action='submit'>Submit</button>
                                 </center>
                            </td>
                        </tr>                              
